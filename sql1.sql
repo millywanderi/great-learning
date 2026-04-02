@@ -17,8 +17,10 @@ INSERT INTO bank_details
 (product, quantity, price, purchase_cost, estimated_sale_price)
 VALUES("paypoints", 4, 200, 8000, 6800);
 
-DROP TABLE IF EXISTS bank_details;
+--DROP TABLE IF EXISTS bank_details;
 
 ALTER TABLE bank_details ADD COLUMN geo_location VARCHAR(20);
+
+SELECT char_length(product) FROM bank_details WHERE product="paycard";
 
 SELECT * FROM bank_details;
