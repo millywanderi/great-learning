@@ -14,4 +14,6 @@ INSERT INTO bank_details VALUES("paypoints",4,200,8000,6800);
 
 ALTER TABLE bank_details ADD COLUMN geo_location VARCHAR(20);
 
+SELECT geo_location FROM bank_details WHERE product="paycard";
 
+SELECT * FROM bank_details;
