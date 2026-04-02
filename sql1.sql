@@ -2,7 +2,7 @@ CREATE DATABASE IF NOT EXISTS bank;
 USE bank;
 
 CREATE TABLE IF NOT EXISTS bank_details(
-    product VARCHAR(10),
+    product CHAR(10),
     quantity INT,
     price REAL,
     purchase_cost DECIMAL(6,2),
@@ -22,5 +22,7 @@ VALUES("paypoints", 4, 200, 8000, 6800);
 ALTER TABLE bank_details ADD COLUMN geo_location VARCHAR(20);
 
 SELECT char_length(product) FROM bank_details WHERE product="paycard";
+
+ALTER TABLE bank_details VARCHAR(10);
 
 SELECT * FROM bank_details;
