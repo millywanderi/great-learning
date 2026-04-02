@@ -12,4 +12,6 @@ CREATE TABLE IF NOT EXISTS bank_details(
 INSERT INTO bank_details VALUES("paycard",3,330,8008,9009);
 INSERT INTO bank_details VALUES("paypoints",4,200,8000,6800);
 
+ALTER TABLE bank_details ADD COLUMN geo_location VARCHAR(20);
+
 
