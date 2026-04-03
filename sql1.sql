@@ -25,4 +25,6 @@ SELECT char_length(product) FROM bank_details WHERE product="paycard";
 
 ALTER TABLE bank_details VARCHAR(10);
 
+ALTER TABLE bank_details VARCHAR(6);
+
 SELECT * FROM bank_details;
