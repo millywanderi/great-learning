@@ -41,4 +41,4 @@ INSERT INTO bank_holidays VALUES (
     current_date()
 );
 
-
+UPDATE bank_holidays SET holiday = date_add(holiday,interval 10 day);
