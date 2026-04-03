@@ -31,6 +31,8 @@ SELECT product as new_product from bank_details;
 
 SELECT * FROM bank_details LIMIT 1;
 
+SELECT substr(geo_location, 1,5) FROM bank_details;
+
 SELECT * FROM bank_details;
 
 CREATE TABLE bank_holidays(
