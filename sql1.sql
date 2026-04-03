@@ -41,4 +41,10 @@ INSERT INTO bank_holidays VALUES (
     current_date()
 );
 
+SET SQL_SAFE_UPDATES = 0;
+
 UPDATE bank_holidays SET holiday = date_add(holiday,interval 10 day);
+
+UPDATE bank_holidays SET end_time = UTC_TIMPESTAMP();
+
+
