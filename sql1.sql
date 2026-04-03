@@ -27,4 +27,10 @@ ALTER TABLE bank_details VARCHAR(10);
 
 ALTER TABLE bank_details VARCHAR(6);
 
+CREATE TABLE bank_holidays(
+    holiday DATE,
+    start_time DATETIME,
+    end_time TIMESTAMP
+);
+
 SELECT * FROM bank_details;
