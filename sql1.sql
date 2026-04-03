@@ -29,6 +29,8 @@ ALTER TABLE bank_details VARCHAR(6);
 
 SELECT product as new_product from bank_details;
 
+SELECT * FROM bank_details LIMIT 1;
+
 SELECT * FROM bank_details;
 
 CREATE TABLE bank_holidays(
@@ -49,4 +51,4 @@ UPDATE bank_holidays SET holiday = date_add(holiday,interval 10 day);
 
 UPDATE bank_holidays SET end_time = UTC_TIMPESTAMP();
 
-
+SELECT * FROM bank_holidays;
