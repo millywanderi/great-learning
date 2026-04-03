@@ -27,6 +27,8 @@ ALTER TABLE bank_details VARCHAR(10);
 
 ALTER TABLE bank_details VARCHAR(6);
 
+SELECT product as new_product from bank_details;
+
 SELECT * FROM bank_details;
 
 CREATE TABLE bank_holidays(
